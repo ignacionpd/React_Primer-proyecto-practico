@@ -1,0 +1,34 @@
+.property-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    /* Combinamos flex-grow, flex-shrink y flex-basis  */
+    flex: 0 1 calc(33.33% - 20px);  /* 20 px es el GAP que le damos para que lo tenga en cuenta a la hora de dividir el espacio de 33%*/
+    max-width: calc(50%);
+    min-width: 300px;
+}
+
+.property-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (max-width: 1200px) {
+    .property-card {
+        flex: 1 1 calc(33.33% - 20px);
+    }
+}
+
+/* .info .span.titulo {
+    margin-bottom: 5px;
+
+} */

@@ -1,0 +1,39 @@
+.icono-flecha {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.icono-flecha, 
+.icono-flecha path {
+    transition: all .2s ease-in-out;
+}
+
+.icono-flecha:hover {
+    transform: scale(1.2);
+}
+
+.icono-flecha:hover path {
+    fill: aqua;
+}
+
+.izq {
+    left: -40px;
+}
+
+.dch {
+    right: -40px;
+}
+
+.icono-disabled {
+    opacity: 0.5;
+    cursor: none;
+    pointer-events: none;
+}
+
+@media (max-width: 800px) {
+    .icono-flecha {
+        top: 30%;
+    }
+}
